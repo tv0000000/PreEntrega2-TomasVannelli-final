@@ -5,7 +5,7 @@
 /* ============ NAV ============*/
 
 .encabezado { 
-    border-bottom: 4px solid #DAE5DE;    
+    border-bottom: 4px solid black;    
 }
 
 .cofLogo {
@@ -21,17 +21,28 @@
 
 /* ============ FOOTER ============*/
 
+.borderFooter {
+    border-top: 4px solid black;
+} 
+
 .footerText {
     font-weight: bold;
 }
 
 /* ============ INDEX ============*/
 
+.mainIndex {
+    background:  #86AFA7;
+}
+
+
 .imgIndex1 {
     width: 50vw;
     border-radius: 1rem;
     margin-left: 8rem;
-    margin-top: 2rem;    
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
 }
 
 .tituloIndex {
@@ -42,11 +53,12 @@
 
 .parrafoIndex { 
     color: rgb(104, 81, 37);
+    font-weight: bold;
 }
 
 /* ============ INDEX - VERSION MOBILE ============*/
 
-@media (min-width:100px) and (max-width:480px) {
+@media (min-width:0px) and (max-width:480px) {
     .imgIndex1 {
         width: 60vw;
         border-radius: 10%;
@@ -72,21 +84,21 @@
 
 /* ============ NOSOTROS ============*/
 
-    .sectionNos1 {
-    background-color: aliceblue;
+.sectionNos1 {
+    background-color: #CCDCD9;
 }
 
-    .subtituloContenedor {
-     font-family: 'Roboto', sans-serif;
-     font-weight: bold;
+.subtituloContenedor {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
-    .subtitulosTres {
+.subtitulosTres {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;    
 }
 
-    .parrafoNosotros {
+.parrafoNosotros {
     font-family: 'Roboto', sans-serif;  
   } 
 
@@ -105,7 +117,7 @@
 
 /* ============ VERSION MOBILE ============*/
 
-@media (min-width:100px) and (max-width:480px) {
+@media (min-width:0px) and (max-width:480px) {
     
     .subtituloContenedor {
         text-align: center;
@@ -113,8 +125,10 @@
     }
 
     .imgNuestro {
-            height: 200px;
-            width: 200px;
+            object-fit: contain;
+            margin-left: 60px;
+            height: 250px;
+            width: 250px;
         }
     }
 
@@ -124,11 +138,16 @@
 .imgNuestro {
     height: 300px;
     width: 300px;
+    margin-bottom: 10px;
 }
 }
 
 
 /* ============ CHARLAS ============*/
+
+.mainCharlas {
+    background-color: #86AFA7;
+}
 
 .subtituloCharlas {
     text-align: center;
@@ -144,7 +163,6 @@
 .videoCharlas {
     width: 581px;
     border-radius: 10px;
-    margin-left: 20px;
 }
 
 .textoVideo {
@@ -164,19 +182,16 @@
 
 /* ============ VERSION MOBILE ============*/
 
-@media (min-width:100px) and (max-width:480px) {
+@media (min-width:0px) and (max-width:480px) {
     .multimediaCharlas {
-        width: 250px; 
-        height: 250px;
-        padding-left: 2px; 
+        width: 300px; 
+        height: 300px; 
     }
 
     .videoCharlas {
-        width: 320px; 
-        height: 200px;
-        padding-right: 40px;
-        padding-top: -10px; 
-    }
+        width: 300px; 
+        height: 300px;
+        }
 }
 
 /* ============ VERSION TABLET ============*/
@@ -231,12 +246,14 @@
 
 /* ============ VERSION MOBILE ============ */
  
-@media (min-width:100px) and (max-width:478px) { 
+@media (min-width:0px) and (max-width:480px) {
+    .backgroundContact { 
+        background-image: url("../img/contactoresp.jpg");
+    }
+
+
     .imgContact {
-        width: 100px;
-        border-radius: 30px;
-        margin-left: 100px;
-        margin-top: 10px;
+        display: none;
     }
 
     .textArea {
@@ -253,7 +270,7 @@
 
 /* ============ VERSION TABLET ============*/
 
-@media (min-width:479px) and (max-width:1000px) { 
+@media (min-width:481px) and (max-width:1000px) { 
     .imgContact {
         width: 200px;
         border-radius: 30px;
